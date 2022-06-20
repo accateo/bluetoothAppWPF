@@ -1,0 +1,28 @@
+﻿<mui:ModernWindow
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  xmlns:views="clr-namespace:bluetoothAppWPF.Views"
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="bluetoothAppWPF.MainWindow"
+                  Title="bluetoothAppWPF"
+                  DataContext="{Binding SenderViewModel,
+                                   Source={StaticResource Locator}}"
+                  Style="{StaticResource BlankWindow}" d:DesignWidth="1793.6" d:DesignHeight="810.4">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid Height="Auto" Width="1480">
+            <StackPanel Orientation="Vertical" Margin="-12,0,22,10">
+                <!-- searching and connection part -->
+                <GroupBox Margin="10,10,10,0" Header="Connection and custom message">
+                    <StackPanel Orientation="Vertical" Height="322" Margin="0,0,-0.4,0">
+                        <StackPanel>
+                            <views:SenderView x:Name="SenderView" Height="341" Margin="0,0,-0.6,0" />
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+
+
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+
+</mui:ModernWindow>
