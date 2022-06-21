@@ -1,5 +1,5 @@
 # bluetoothAppWPF
-Windows WPF application in C# with Bluetooth communication
+Windows WPF application (Windows Presentation Foundation) in C# with Bluetooth communication
 
 ![screenshot app](src/Images/screenshot.PNG)
 
@@ -10,3 +10,7 @@ By clicking on a device it's possible to pair and, through the appropriate text 
 ### Package used
 
 - 32feet.NET for Bluetooth
+
+### Run
+
+You can import .sln file inside Visual Studio
